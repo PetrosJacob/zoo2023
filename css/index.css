@@ -20,6 +20,19 @@ body {
 }
 
 
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 4ch;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
 
 header {
 grid-area: hd;
@@ -43,8 +56,9 @@ nav {
 section {
     grid-area:sc;
     display: flex;
-    flex-direction: column;
-    align-items:center
+    flex-direction: rows;
+    align-items:center;
+    flex-wrap: wrap;
 }
 
 aside {
@@ -57,8 +71,6 @@ aside {
     height: 400px;
     margin: 1ch;
     border-radius: 30px;
+    object-fit: cover;
 }
-
-
-
 
