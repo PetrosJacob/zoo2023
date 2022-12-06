@@ -3,7 +3,7 @@
     width:100%;
     height: 100vh;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 3fr 8fr 17fr;
+    grid-template-rows: 5% 8fr 17fr;
     grid-template-areas:
         "nav nav"   
         "hd hd"
