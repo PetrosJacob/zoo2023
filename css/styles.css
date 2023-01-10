@@ -1,12 +1,13 @@
 #main1 {
     display: grid;
-    width:100%;
+    width: 100%;
     height: 100vh;
     grid-template-columns:50% auto;
-    grid-template-rows: 5% 25% 17fr;
+    grid-template-rows: 5% 25% 10fr 17fr;
     grid-template-areas:
         "nav nav"   
         "hd hd"
+        "et1 et2"
         "sc as";
 }
 
@@ -15,19 +16,56 @@
   width:100%;
   height: 100vh;
   grid-template-columns:50% auto;
-  grid-template-rows: 5% 25% 17fr;
+  grid-template-rows: 5% 25% 5fr 17fr;
   grid-template-areas:
       "nav nav"   
       "hd hd"
       "sc as";
 }
-
+#explainingtext_djur{
+  grid-area: et1;
+}
+#explainingtext_mat{
+  grid-area: et2;
+}
+.explaintext {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #FFDE5E;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
 body {
     margin: 0;
-    background: repeating-linear-gradient(0deg, rgb(2, 108, 122) 0%, rgba(9,121,65,1) 27%, rgba(108,255,0,1) 100%); 
+    background: repeating-linear-gradient(180deg, rgb(16, 187, 30) 0%, rgba(128,76,24,1) 100%);
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+#headerName {
+  width: 1300px;
+}
+
+.textbox {
+  width: 100%;
+}
+.loremipsum {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4ch;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
 }
 
 h2, a {
@@ -59,6 +97,7 @@ nav {
     grid-area: nav;
 
 }
+
 section {
     grid-area:sc;
     display: flex;
@@ -70,13 +109,16 @@ section {
 aside {
     grid-area:as;
     display: flex;
-    flex-flow:row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: flex-start;
 }
 
 
 .djur {
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 550px;
     margin: 1ch;
     border-radius: 30px;
     object-fit: cover;
@@ -119,8 +161,8 @@ aside {
  
   }
   .mat {
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 550px;
     margin: 1ch;
     border-radius: 30px;
     object-fit: cover;
@@ -135,7 +177,7 @@ aside {
     padding: 10px;
     margin-left: 10px;
     margin-top: 10px;
-    max-height: 500px;
+ 
   }
   h4 {
     font-size:100%;
@@ -170,11 +212,11 @@ aside {
   .cardemploye {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 20%;
-    max-height: 450px;
+
+    max-height: 650px;
     border: solid black 2px;
     border-radius: 20px;
-    background: orange;
+    background: rgb(255, 255, 255);
 
     border-radius: 30px 30px 30px 30px;
     margin: 5px;
@@ -192,8 +234,8 @@ aside {
   }
 
   .pers {
-    width: 100%;
-    height: 80%;
+    width: 550px;
+    height: 550px;
     border-radius: 28px;
 }
 
@@ -216,22 +258,11 @@ aside {
   }
   iframe {
     width: 100%;
-    height: 1fr;
 
   }
-  #loremipsum {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 4ch;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    color: #000000;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-  }
+
   
+ 
 
   
   
