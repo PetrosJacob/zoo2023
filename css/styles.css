@@ -70,11 +70,9 @@ section {
 aside {
     grid-area:as;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-right: 10px;  
-    justify-content: end;
+    flex-flow:row wrap;
 }
+
 
 .djur {
     width: 400px;
@@ -107,7 +105,7 @@ aside {
     border-radius: 20px;
     background: white;
     padding: 10px;
-
+    
     margin-left: 10px;
     margin-top: 10px;
   }
@@ -133,11 +131,11 @@ aside {
     transition: 0.3s;
     border: solid black;
     border-radius: 20px;
-    background: rgb(255, 255, 255);
+    background: white;
     padding: 10px;
-    max-width: 415px;
     margin-left: 10px;
     margin-top: 10px;
+    max-height: 500px;
   }
   h4 {
     font-size:100%;
