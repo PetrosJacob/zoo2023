@@ -50,8 +50,12 @@ body {
 
 #headerName {
   width: 1300px;
+  height: 100%;
 }
-
+#Petros {
+  height: 400px;
+  width: 400px;
+}
 .textbox {
   width: 100%;
 }
@@ -83,7 +87,7 @@ h2, a {
 
 header {
 grid-area: hd;
-background-image: url(../misc/header.jpg);
+background-image: url(../img/misc/header.jpg);
 background-size: cover;
 display: flex;
 align-items: center;
@@ -117,8 +121,8 @@ aside {
 
 
 .djur {
-    width: 550px;
-    height: 550px;
+    width: 400px;
+    height: 400px;
     margin: 1ch;
     border-radius: 30px;
     object-fit: cover;
@@ -161,8 +165,8 @@ aside {
  
   }
   .mat {
-    width: 550px;
-    height: 550px;
+    width: 400px;
+    height: 400px;
     margin: 1ch;
     border-radius: 30px;
     object-fit: cover;
@@ -234,8 +238,8 @@ aside {
   }
 
   .pers {
-    width: 550px;
-    height: 550px;
+    width: 400px;
+    height: 400px;
     border-radius: 28px;
 }
 
